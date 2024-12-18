@@ -1,0 +1,36 @@
+/*
+Puente García Jorge 
+UO294228
+*/
+
+/*
+Especifidad 001
+*/
+body>section {
+  display: grid;
+  gap: 1.25em;
+  max-width: 75em; 
+  grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
+  margin: auto;
+}
+
+section>section{
+  background-color: #ffffff;
+  color: #000;
+  border: 0.1em solid #ddd;
+  border-radius: 0.5em;
+  padding: 1em;
+  text-align: center;
+}
+body>section>h3 {
+  grid-column: 1 / -1;
+}
+body>section>section>h4 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+/*Especificidad 004*/
+body>section>section>p {
+  font-size: 1em;
+  margin: 0.25em 0;
+}
