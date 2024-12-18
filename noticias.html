@@ -34,19 +34,13 @@
     
     <p>Estás en: <a href="index.html" title="Enlace a la pagina de inicio">Inicio</a> >> Noticias</p>
 	<h2>Noticias</h2>
-    <label>
-        Subir archivo:
-        <input type="file"  onchange="new Noticias().readInputFile(this.files)">
-    </label>
+    <label>Subir archivo: <input type="file"  onchange="new Noticias().readInputFile(this.files)"></label>
     
 
     <h3>Crear nueva noticia</h3>
     <form>
         <label>Título: <input type="text" name="titulo">  </label>
-        <label >
-            Autor:
-            <input type="text"  name="autor">
-        </label>
+        <label >Autor: <input type="text"  name="autor"> </label>
         <label >Contenido: <textarea name="contenido" rows="4" cols="50"></textarea> </label>
         <button name="crearNoticia" type="button" onclick="new Noticias().muestraNuevaNoticia()">Crear Noticia</button>
     </form>
